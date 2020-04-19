@@ -1,11 +1,12 @@
 Name:           xournalpp
-Version:        1.0.16
-Release:        %mkrel 3
+Version:        1.0.18
+Release:        1
 Summary:        Notetaking software designed around a tablet
 License:        GPLv2+
 Group:          Office/Utilities
 Url:            https://github.com/xournalpp/xournalpp
-Source0:        https://github.com/xournalpp/xournalpp/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:        https://github.com/xournalpp/xournalpp/archive/%{version}/%{name}-%{version}.tar.gz
+
 BuildRequires:  cmake
 BuildRequires:  fdupes
 BuildRequires:  gcc-c++
@@ -28,14 +29,14 @@ Xournal++ is a hand note taking software.
 It supports pen input, e.g. Wacom tablets.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %cmake
-%cmake_build
+%make_build -C build
 
 %install
-%cmake_install
+%make_install -C build
 
 %find_lang xournalpp
 
