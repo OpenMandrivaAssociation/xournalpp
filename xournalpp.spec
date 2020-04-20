@@ -9,7 +9,6 @@ Source0:        https://github.com/xournalpp/xournalpp/archive/%{version}/%{name
 
 BuildRequires:  cmake
 BuildRequires:  fdupes
-BuildRequires:  gcc-c++
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
 BuildRequires:  texlive
