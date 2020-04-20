@@ -33,7 +33,7 @@ It supports pen input, e.g. Wacom tablets.
 
 %build
 %cmake
-%make_build -C build
+%make_build
 
 %install
 %make_install -C build
