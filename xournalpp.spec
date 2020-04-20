@@ -25,6 +25,10 @@ BuildRequires:  pkgconfig(sndfile)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  gettext
 
+# Optional, disable it if any problems arise (angry)
+BuildRequires:  pkgconfig(cppunit)
+BuildRequires:  pkgconfig(lua)
+
 %description
 Xournal++ is a hand note taking software.
 It supports pen input, e.g. Wacom tablets.
