@@ -28,6 +28,8 @@ BuildRequires:  gettext
 BuildRequires:  pkgconfig(cppunit)
 BuildRequires:  pkgconfig(lua)
 
+Requires: hicolor-icon-theme
+
 %description
 Xournal++ is a hand note taking software.
 It supports pen input, e.g. Wacom tablets.
@@ -36,7 +38,7 @@ It supports pen input, e.g. Wacom tablets.
 %autosetup -p1
 
 %build
-%cmake
+%cmake  -DENABLE_CPPUNIT=ON
 %make_build
 
 %install
