@@ -47,9 +47,6 @@ It supports pen input, e.g. Wacom tablets.
 
 %find_lang xournalpp
 
-# REMOVE UNNECESSARY SCRIPTS update-icon-cache IS TAKEN CARE OF BY RPM FILE TRIGGERS
-rm %{buildroot}%{_datadir}/%{name}/ui/*/hicolor/update-icon-cache.sh
-
 %files -f xournalpp.lang
 %license LICENSE
 %doc AUTHORS README.md
