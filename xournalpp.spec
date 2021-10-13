@@ -51,6 +51,7 @@ It supports pen input, e.g. Wacom tablets.
 %license LICENSE
 %doc AUTHORS README.md
 %{_bindir}/xournalpp
+%{_bindir}/xournalpp-thumbnailer
 %{_datadir}/icons/hicolor/scalable/mimetypes/*.svg
 %{_datadir}/mime/packages/*.xml
 %{_datadir}/applications/com.github.xournalpp.xournalpp.desktop
