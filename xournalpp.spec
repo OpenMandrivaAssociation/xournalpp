@@ -50,7 +50,6 @@ It supports pen input, e.g. Wacom tablets.
 %files -f xournalpp.lang
 %license LICENSE
 %doc AUTHORS README.md
-%{_bindir}/xournal-thumbnailer
 %{_bindir}/xournalpp
 %{_datadir}/icons/hicolor/scalable/mimetypes/*.svg
 %{_datadir}/mime/packages/*.xml
