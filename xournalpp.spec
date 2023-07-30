@@ -56,7 +56,6 @@ It supports pen input, e.g. Wacom tablets.
 %{_datadir}/mime/packages/*.xml
 %{_datadir}/applications/com.github.xournalpp.xournalpp.desktop
 %{_datadir}/metainfo/com.github.xournalpp.xournalpp.appdata.xml
-%{_datadir}/mimelnk/application/*.desktop
 %{_datadir}/xournalpp/
 %{_datadir}/icons/hicolor/*/apps/*
 %{_datadir}/thumbnailers/*.thumbnailer
