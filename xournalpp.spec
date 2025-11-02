@@ -24,6 +24,7 @@ BuildRequires:  pkgconfig(portaudiocpp)
 BuildRequires:  pkgconfig(sndfile)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  gettext
+BuildRequires:  pkgconfig(gtksourceview-4)
 
 # Optional, disable it if any problems arise (angry)
 BuildRequires:  pkgconfig(cppunit)
