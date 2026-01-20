@@ -8,6 +8,7 @@ Url:            https://github.com/xournalpp/xournalpp
 Source0:        https://github.com/xournalpp/xournalpp/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  make
+BuildRequires:  git
 BuildRequires:  cmake
 BuildRequires:  fdupes
 BuildRequires:  hicolor-icon-theme
