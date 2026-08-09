@@ -42,7 +42,9 @@ It supports pen input, e.g. Wacom tablets.
 %autosetup -p1
 
 %build
-%cmake  -DENABLE_CPPUNIT=ON
+%cmake  \
+        -DENABLE_CPPUNIT=ON \
+        -DENABLE_CPPTRACE=OFF
 %make_build
 
 %install
