@@ -1,5 +1,5 @@
 Name:           xournalpp
-Version:        1.3.6
+Version:        1.3.7
 Release:        1
 Summary:        Notetaking software designed around a tablet
 License:        GPLv2+
@@ -21,11 +21,13 @@ BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(librsvg-2.0)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(libzip)
+BuildRequires:	pkgconfig(libqpdf)
 BuildRequires:  pkgconfig(poppler-glib)
 BuildRequires:  pkgconfig(portaudiocpp)
 BuildRequires:  pkgconfig(sndfile)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  gettext
+BuildRequires:	help2man
 BuildRequires:  pkgconfig(gtksourceview-4)
 
 # Optional, disable it if any problems arise (angry)
@@ -57,6 +59,7 @@ It supports pen input, e.g. Wacom tablets.
 %doc AUTHORS README.md
 %{_bindir}/xournalpp
 %{_bindir}/xournalpp-thumbnailer
+%{_bindir}/xournalpp-wrapper
 %{_datadir}/icons/hicolor/scalable/mimetypes/*.svg
 %{_datadir}/mime/packages/*.xml
 %{_datadir}/applications/com.github.xournalpp.xournalpp.desktop
@@ -64,3 +67,5 @@ It supports pen input, e.g. Wacom tablets.
 %{_datadir}/xournalpp/
 %{_datadir}/icons/hicolor/*/apps/*
 %{_datadir}/thumbnailers/*.thumbnailer
+%{_mandir}/man1/xournalpp-thumbnailer.1.*
+%{_mandir}/man1/xournalpp.1.*
